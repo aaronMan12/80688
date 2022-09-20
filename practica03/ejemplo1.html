@@ -8,10 +8,29 @@
         margin: 0px;
         padding: 0px;
      } 
-    .padre{
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     .padre{
         background-color: orange;
-       /* margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       margin: 5px;/*
         padding: 10px;*/
+        border: 1px solid black;
+    }
+
+    .hijo{
+background-color: red;
+margin: 10px;
+/*margin: auto;*/
+width: 200px;
+    }
+    .hijo2{
+        background-color: yellowgreen ;
+        width: 200px;
     }
     </style>
     <meta charset="UTF-8">
@@ -26,6 +45,36 @@
     <div class="padre">04</div>
     <div class="padre">05</div>
 
+
+<div class="padre">
+    
+    <div class="hijo2">h01</div>
+    <div class="hijo2">h02</div>
+    <div class="hijo2">h03</div>
+    <div class="hijo2">h04</div>
+    <div class="hijo2">h05</div>
+
+   
+
+    
+</div>
+<div class="padre">
+    <div class="hijo">h02</div>
+</div>
+<div class="padre">
+    <div class="hijo">h03</div>
+</div>
+<div class="padre">
+    <div class="hijo">h04</div>
+</div>
+
+<p class="padre">
+    <div class="hijo2">ph01</div>
+    <div class="hijo2">ph02</div>
+    <div class="hijo2">ph03</div>
+    <div class="hijo2">ph04</div>
+    <div class="hijo2">ph05</div>
+</p>
 
 </body>
 </html>
