@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarColor(color){
+            console.log("Color recibido:", color)
+            var e=document.getElementById("titulo1")
+            e.style.color= color
+
+        }
+
+        function cambioH1(etiquet){
+          
+            console.log("color recibido:", etiquet)
+            var c=document.getElementsByTagName("h1")
+            for(let i=0;i<c.length ;i++){
+                c[i].style.color=etiquet
+            }
+
+           var arr=[].slice.call(c);
+           arr.array.forEach(element => 
+           {console.long(element) 
+            element.style.color=etiquet
+            
+           });
+           
+             
+        }
+
+    </script>
+    </script>
+</head>
+<body>
+    <h1 id="titulo1">Este es un titulo 1</h1>
+    <h1 id="titulo2">Este es un titulo 2</h1>
+    <h1 id="titulo3">Este es un titulo 3</h1>
+    <h1 id="titulo4">Este es un titulo 4</h1>
+    
+    <button onclick="cambiarColor('red')">Rojo</button>
+    <button onclick="cambiarColor('purple')">azul</button>
+    <button onclick="cambioH1('blue')">purpura</button>
+</body>
+</html>
