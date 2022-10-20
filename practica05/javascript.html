@@ -14,20 +14,35 @@
         }
 
         function cambioH1(etiquet){
-          
+          var c=document.getElementsByName("h1")
             console.log("color recibido:", etiquet)
-            var c=document.getElementsByTagName("h1")
-            for(let i=0;i<c.length ;i++){
+            var c2=document.getElementsByTagName("h1")
+            /*for(let i=0;i<c.length ;i++){
                 c[i].style.color=etiquet
-            }
+            }*/
 
-           var arr=[].slice.call(c);
-           arr.array.forEach(element => 
-           {console.long(element) 
-            element.style.color=etiquet
+          // var arr=[].slice.call(c);
+           //arr.array.forEach(element => 
+           //{console.long(element) 
+            //element.style.color=etiquet
             
-           });
+           //});
+            let i=0
+           for (const p in c2) {
+            if(i< c2.length){
+             c2[p].style.color=etiquet
+             i++
+            }
            
+           }
+           
+           
+           /*for (const x in c2) {
+            if (Object.hasOwnProperty.call(c2, x)) {
+               const element = c2[x].style.color="green";
+                
+            }
+           }*/
              
         }
 
