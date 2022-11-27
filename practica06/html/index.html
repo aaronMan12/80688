@@ -7,14 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-    <label for="user">usuario</label>
-    <input type="text" id="login"placeholder="correo Electronico">
-    <label for="pass">contraseña</label>
-    <input type="password" id="password"placeholder="contraseña">
-    <button type="button" id="sigin">entrar</button>
-</form>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src=""></script>p
+    <form action="http://localhost:4567" method="post">
+        <input type="text" name="login" placeholder="usuario">
+        <input type="password" name="password" placeholder="contraseña" >
+        <button  id="entrar">entrar</button>
+    </form>
 </body>
 </html>

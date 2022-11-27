@@ -1,4 +1,4 @@
-package mx.uv.c80688;
+package mx.uv;
 
 import static org.junit.Assert.assertTrue;
 
